@@ -1,0 +1,127 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+
+title: 追梦
+subtitle: "一起追逐的梦"
+description: "李良山的个人博客"
+keywords: Li Liangshan, Liangshan Li, Java, NodeJS, GO, SQL, Docker
+timezone: Asia/Shanghai
+encoding: "utf-8"
+side_bar_repo_limit: 5
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://liliangshan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+# ---------------- #
+#      Author      #
+# ---------------- #
+author: Li Liangshan
+organization: BLACKLAKE TECH.
+organization_url: https://www.blacklake.cn
+github_username: li-liangshan
+location: Shanghai, China
+email: liliangshanlls@gmail.com
+
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navigation:
+
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+theme: minima
+highlighter: rouge
+paginate: 10
+permalink: /:year/:month/:day/:title/
+plugins:
+  - jekyll-feed
+gems:
+    - jekyll-github-metadata
+    - rouge
+#     - jekyll-html-pipeline
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+#     - jekyll-mentions
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
+
+repository: li-liangshan/li-liangshan.github.io
+
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, gitment, gitalk
+comments_provider: gitalk
+# !!!重要!!! 请修改下面这些信息为你自己申请的
+# !!!Important!!! Please modify infos below to yours
+# https://disqus.com
+disqus:
+    username:
+# https://imsun.net/posts/gitment-introduction/
+gitment:
+    owner: li-liangshan
+    repo: blog-comments
+    oauth:
+        client_id: 9f18a5c9a7d21b2bf1b8
+        client_secret: ddca10c247f86ae2b3129de62551a07cf716d303
+# https://github.com/gitalk/gitalk#install
+gitalk:
+    owner: li-liangshan
+    repo: blog-comments
+    clientID: 9f18a5c9a7d21b2bf1b8
+    clientSecret: ddca10c247f86ae2b3129de62551a07cf716d303
+# 在使用其它评论组件时可点击显示 Disqus
+lazy_load_disqus : false
+
+# ---------------- #
+#      Search      #
+# ---------------- #
+simple_jekyll_search:
+    # 是否支持全文搜索
+    fulltext: false
+    # 最多显示多少条搜索结果
+    limit: 10
+
+# ---------------- #
+#    Analytics     #
+# ---------------- #
+google:
+    analytics_id: UA-80669434-1
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
