@@ -1,6 +1,10 @@
 ---
 layout: page
 title: About
+description: 没有链接的博客是孤独的
+keywords: About
+comments: true
+menu: 关于
 permalink: /about/
 ---
 

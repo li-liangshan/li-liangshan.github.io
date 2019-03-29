@@ -37,11 +37,35 @@ organization_url: https://www.blacklake.cn
 github_username: li-liangshan
 location: Shanghai, China
 email: liliangshanlls@gmail.com
+date: 2019-03-28 14:43:25 +0800
 
 # ---------------- #
 #    Navigation    #
 # ---------------- #
-navigation:
+navigations:
+  -
+    href: /
+    label: 首页
+
+  -
+    href: /articles/
+    label: 文章
+
+  -
+    href: /categories/
+    label: 分类
+
+  -
+    href: /wiki/
+    label: 维基
+
+  -
+    href: /links/
+    label: 链接
+
+  -
+    href: /about/
+    label: 关于
 
 
 # ---------------- #
@@ -54,18 +78,21 @@ kramdown:
 theme: minima
 highlighter: rouge
 paginate: 10
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
 permalink: /:year/:month/:day/:title/
 plugins:
   - jekyll-feed
 gems:
     - jekyll-github-metadata
     - rouge
-#     - jekyll-html-pipeline
+    - jekyll-html-pipeline
     - jekyll-paginate
     - jekyll-sitemap
     - jekyll-feed
     - jemoji
-#     - jekyll-mentions
+    - jekyll-mentions
 collections:
     wiki:
         output: true
@@ -76,26 +103,14 @@ repository: li-liangshan/li-liangshan.github.io
 # ---------------- #
 #      Comments    #
 # ---------------- #
-# support provider: disqus, gitment, gitalk
 comments_provider: gitalk
-# !!!重要!!! 请修改下面这些信息为你自己申请的
-# !!!Important!!! Please modify infos below to yours
-# https://disqus.com
-disqus:
-    username:
-# https://imsun.net/posts/gitment-introduction/
-gitment:
-    owner: li-liangshan
-    repo: blog-comments
-    oauth:
-        client_id: 9f18a5c9a7d21b2bf1b8
-        client_secret: ddca10c247f86ae2b3129de62551a07cf716d303
-# https://github.com/gitalk/gitalk#install
 gitalk:
+    enable: true
     owner: li-liangshan
-    repo: blog-comments
+    repo: li-liangshan.github.io
     clientID: 9f18a5c9a7d21b2bf1b8
     clientSecret: ddca10c247f86ae2b3129de62551a07cf716d303
+    distractionFreeMode: true
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : false
 
