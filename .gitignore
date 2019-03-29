@@ -2,6 +2,6 @@
 .vscode
 Gemfile.lock
 _site
-vendor
 .bundle
 .sass-cache
+vendor
